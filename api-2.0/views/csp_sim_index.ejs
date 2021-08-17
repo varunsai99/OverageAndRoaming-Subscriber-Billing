@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/header.ejs') %> 
+<body>
+  <header id="main-header"><h1>Roaming Usecase</h1></header>
+  <ul class="center">
+    <li id="zero"><a href="/CSPAdmin/<%= username %>/GetAllSubscriberSims/<%= publicKey%>/info">Details</a></li>
+    <li id="two"><a href="/CSPAdmin/<%= username %>/GetAllSubscriberSims/<%= publicKey%>/calldetails">Call Details</a></li>
+    <li id="four"><a href="/CSPAdmin/<%= username %>/GetAllSubscriberSims/<%= publicKey%>/history">Sim History</a></li>
+    <li id="five"><a href="/CSPAdmin/<%= username %>/GetAllSubscriberSims/<%= publicKey%>/movesim">Move sim</a></li>
+  </ul>
+</body>
+</html>

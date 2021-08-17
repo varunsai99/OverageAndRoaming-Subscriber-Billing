@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/header.ejs') %> 
+<body>
+    <header id="main-header"><h1>Roaming Usecase</h1></header>
+    <div>
+        <ol>
+            <% for(var message of result) { %>
+                <li>
+                    <h3>Public Key is <%= message["Value"]["PublicKey"] %> </h3>
+                    <h3>Msisdn is <%= message["Value"]["Msisdn"] %></h3>
+                    <h3>Address is <%= message["Value"]["Address"] %></h3>
+                    <h3>HomeOperatorName is <%= message["Value"]["HomeOperatorName"] %></h3>
+                    <h3>RoamingPartnerName is <%= message["Value"]["RoamingPartnerName"] %></h3>
+                    <h3>IsRoaming <%= message["Value"]["IsRoaming"] %></h3>
+                    <h3>Location is <%= message["Value"]["Location"] %></h3>
+                    <h3>Longitude is <%= message["Value"]["Longitude"] %></h3>
+                    <h3>Latitude is <%= message["Value"]["Latitude"] %></h3>
+                    <h3>RoamingRate is <%= message["Value"]["RoamingRate"] %></h3>
+                    <h3>OverageRate <%= message["Value"]["OverageRate"] %></h3>
+                    <h3>IsValid is <%= message["Value"]["IsValid"] %></h3>
+                    <h3>OverageThreshold is <%= message["Value"]["OverageThreshold"] %></h3>
+                    <h3>OverageFlag is <%= message["Value"]["OverageFlag"] %></h3>
+                    <h3>AllowOverage is <%= message["Value"]["AllowOverage"] %></h3>
+                    <h3>Transaction Id: <%= message["TxId"] %> </h3>
+                    <h3>Timestamp : <%= message["Timestamp"] %> </h3>
+                </li>
+            <% } %>
+        </ol>
+    </div>
+</body>
+</html>

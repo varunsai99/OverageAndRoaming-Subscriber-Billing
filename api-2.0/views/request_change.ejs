@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %> 
+<body>
+    <div class="center" id ="request">
+        <h2>User Details</h2>
+        <form method="POST">
+          <label for="name">Name (as per Aadhar):</label><br>
+          <input type="text" id="name" name="Name"><br>
+          <br>
+          <label for="anumber">Aadhar Number:</label><br>
+            <input type="text" id="anumber" name="AadharNumber"><br>
+          <br>
+          <label for="address">Address:</label><br>
+          <textarea id="Address" name="Address" rows="4" cols="50"> </textarea><br>
+          <br>
+          <p>Gender:</p>
+            <input type="radio" id="gender1" name="gender" value="M">
+            <label for="gender1">Male</label><br>
+            <input type="radio" id="gender2" name="gender" value="F">
+            <label for="gender2">Female</label><br> 
+          <br>
+          <label for="dob">Date of Birth:</label><br>
+            <input type="text" id="dob" name="DateOfBirth" placeholder="dd-mm-yyyy"><br>
+          <br>
+          <br>
+          <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="password"><br>
+          <br>
+          <label for="proof">Proof Document:</label><br>
+          <input type="file" id="proof" name="proof"><br>
+          <br>
+          <input type="button" class="button" value="Submit">
+        </form> 
+      </div>
+</body>
+</html>

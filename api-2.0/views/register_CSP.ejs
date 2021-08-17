@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+<body>
+  <header id="main-header"><h1>Roaming Usecase</h1></header>
+  <div class="center">
+    <h2>CSP Details</h2>
+    <form method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="Name"><br>
+      <br>
+      <label for="region">Region:</label><br>
+        <input type="text" id="region" name="Region"><br>
+      <br>
+      
+      <label for="latitude">latitude:</label><br>
+        <input type="text" id="latitude" name="Latitude"><br>
+      <br>
+
+      <label for="longitude">longitude:</label><br>
+        <input type="text" id="longitude" name="Longitude"><br>
+      <br>
+
+      <label for="overage">overageRate:</label><br>
+        <input type="number" id="overage" name="OverageRate" step="0.01"><br>
+      <br>
+
+      <label for="roaming">roamingRate:</label><br>
+        <input type="number" id="roaming" name="RoamingRate" step="0.01"><br>
+      <br>
+
+      <label for="password">password:</label><br>
+        <input type="password" id="password" name="password"><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form> 
+  </div>
+</body>
+</html>

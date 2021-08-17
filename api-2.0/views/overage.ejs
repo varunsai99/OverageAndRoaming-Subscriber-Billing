@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/header.ejs') %> 
+<body>
+    <header id="main-header"><h1>Roaming Usecase</h1></header>
+    <h3>Your charges has reached OverageThreshold. From this call onwards you will charge with overage Rate.</h3>
+    <h3>Submit your responce here.</h3>
+    <form action="/user/<%= publicKey %>/overage" method="POST">
+        <p>Responce:</p>
+        <input type="radio" id="yes" name="responce" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="responce" value="no">
+        <label for="no">No</label><br> 
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+<body>
+  <header id="main-header"><h1>Roaming Usecase</h1></header>
+  <div class="center">
+    <h2>Subscriber Sim Details</h2>
+    <form method="POST">
+      <label for="PublicKey">PublicKey:</label><br>
+      <input type="text" id="PublicKey" name="PublicKey"><br>
+      <br>
+      <label for="Address">Address:</label><br>
+        <input type="text" id="Address" name="Address"><br>
+      <br>
+      
+      <label for="Msisdn">Msisdn:</label><br>
+        <input type="text" id="Msisdn" name="Msisdn"><br>
+      <br>
+
+      <label for="HomeOperatorName">HomeOperatorName:</label><br>
+        <input type="text" id="HomeOperatorName" name="HomeOperatorName"><br>
+      <br>
+      
+      <label for="password">password:</label><br>
+        <input type="password" id="password" name="password"><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form> 
+  </div>
+</body>
+</html>

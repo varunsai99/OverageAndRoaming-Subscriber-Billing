@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/header.ejs') %> 
+<body>
+  <header id="main-header"><h1>Roaming Usecase</h1></header>
+  <ul class="center">
+    <li id="zero"><a href="/user/<%= publicKey%>/info">Details</a></li>
+    <li id="two"><a href="/user/<%= publicKey%>/calldetails">Call Details</a></li>
+    <li id="four"><a href="/user/<%= publicKey%>/simhistory">Sim History</a></li>
+    <li id="five"><a href="/user/<%= publicKey%>/callout">Call Out</a></li>
+  </ul>
+</body>
+</html>

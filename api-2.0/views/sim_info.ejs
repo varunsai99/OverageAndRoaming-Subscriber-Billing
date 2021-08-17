@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/header.ejs') %> 
+<body>
+    <header id="main-header"><h1>Roaming Usecase</h1></header>
+    <div class="center">
+        <h3>Public Key is <%= message["PublicKey"] %> </h3>
+        <h3>Msisdn is <%= message["Msisdn"] %></h3>
+        <h3>Address is <%= message["Address"] %></h3>
+        <h3>HomeOperatorName is <%= message["HomeOperatorName"] %></h3>
+        <h3>RoamingPartnerName is <%= message["RoamingPartnerName"] %></h3>
+        <h3>IsRoaming <%= message["IsRoaming"] %></h3>
+        <h3>Location is <%= message["Location"] %></h3>
+        <h3>Longitude is <%= message["Longitude"] %></h3>
+        <h3>Latitude is <%= message["Latitude"] %></h3>
+        <h3>RoamingRate is <%= message["RoamingRate"] %></h3>
+        <h3>OverageRate <%= message["OverageRate"] %></h3>
+        <h3>IsValid is <%= message["IsValid"] %></h3>
+        <h3>OverageThreshold is <%= message["OverageThreshold"] %></h3>
+        <h3>OverageFlag is <%= message["OverageFlag"] %></h3>
+        <h3>AllowOverage is <%= message["AllowOverage"] %></h3>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/header.ejs') %> 
+<body>
+    <ol>
+        <% for(var service of message) { %>
+            <li>
+                <ul>
+                    <li>PhoneNumber : <%= service["Value"]["PhoneNumber"] %> </li>
+                    <li>Service Name :<%= service["Value"]["ServiceName"] %> </li>
+                    <li>Service Price :<%= service["Value"]["ServicePrice"] %> </li>
+                    <li>Transaction Id :<%= service["TxId"] %> </li>
+                    <br><br>
+                </ul>
+            </li>
+        <% } %>
+    </ol>
+</body>
+</html>
+

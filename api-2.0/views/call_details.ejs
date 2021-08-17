@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %> 
+<body>
+    <header id="main-header"><h1>Roaming Usecase</h1></header>
+    <ol>
+        <% for(var calldetail of message) { %>
+            <li>
+                <h4>Call Begin time: <%= calldetail["CallBegin"] %> </h4>
+                <h4>Call End time: <%= calldetail["CallEnd"] %> </h4>
+                <h4>Call Charges time: <%= calldetail["CallCharges"] %> </h4>
+            </li>
+        <% } %>
+    </ol>
+</body>
+</html>

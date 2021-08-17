@@ -1,0 +1,51 @@
+#main-header {
+    background-color: coral;
+    color: cornsilk;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    padding: auto;
+    color: rgb(47, 67, 179);
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(18, 48, 218);
+    text-decoration: underline;
+}
+
+form input[type="text"]{
+    padding:auto;
+    margin-top: 5px;
+    width: 13%;
+}
+
+form input[type="password"]{
+    padding:auto;
+    margin-top: 5px;
+    width: 13%;
+}
+
+form input[type="submit"]{
+    background-color: black;
+    color: cornsilk;
+    padding: auto;
+    border: none;
+    font: normal 16px Arial,Helvetica,sans-serif;
+}
+
+li {
+    font: normal 16px Arial,Helvetica,sans-serif;
+    padding-bottom: 4px;
+}

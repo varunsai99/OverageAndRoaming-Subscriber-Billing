@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/header.ejs') %> 
+<body>
+    <ol>
+        <% for(var person of message) { %>
+            <li>
+                <ul>
+                    <li>From : <%= person["Value"]["From"] %> </li>
+                    <li>To :<%= person["Value"]["To"] %> </li>
+                    <li>Amount :<%= person["Value"]["Amount"] %> </li>
+                    <li>Type : <%= person["Value"]["Type"] %> </li>
+                    <li>Transaction Id : <%= person["TxId"] %> </li>
+                    <br><br>
+                </ul>
+            </li>
+        <% } %>
+    </ol>
+</body>
+</html>
+
