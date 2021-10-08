@@ -8,7 +8,7 @@ var SHA256 = require("crypto-js/sha256");
 const mongoose = require('mongoose')
 const express = require('express')
 const app = express();
-const dbURI = 'mongodb+srv://varun:varun1234@telco-project.rf8w0.mongodb.net/Project?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://varun:varun1234@cluster0.6xvfh.mongodb.net/Project?retryWrites=true&w=majority'
 
 const cors = require('cors');
 const constants = require('./config/constants.json')
